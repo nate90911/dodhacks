@@ -2,15 +2,16 @@ CMD += gcc
 OUT += dodhacks_amxx_i386.so
 
 SRC += linux_compat.c
-SRC += moduleconfig.cpp
+SRC += dodhacks.cpp
 SRC += Memory.cpp
-SRC += amxxmodule.cpp
+SRC += /mnt/d/scripting/amxmodx-master/public/sdk/amxxmodule.cpp
 SRC += /mnt/d/scripting/subhook-master/subhook.c
 
 DEF += -D__fastcall=/**__fastcall*/
 DEF += -D__thiscall=/**__thiscall*/
 DEF += -D_COMPILER_GCC
 DEF += -D_FASTCALL_PARAM=/**void*,*/
+DEF += -D_FASTCALL_PARAM_ALONE=/**,void**/
 DEF += -D_GCC
 DEF += -D_GEOIP_STATIC
 # DEF += -D_GLIBCXX_USE_CXX11_ABI=0
@@ -36,6 +37,7 @@ DEF += -D_fastcall=/**_fastcall*/
 DEF += -D_thiscall=/**_thiscall*/
 DEF += -DCOMPILER_GCC
 DEF += -DFASTCALL_PARAM=/**void*,*/
+DEF += -DFASTCALL_PARAM_ALONE=/**,void**/
 DEF += -DGCC
 DEF += -DGEOIP_STATIC
 # DEF += -DGLIBCXX_USE_CXX11_ABI=0
@@ -107,6 +109,7 @@ OPT += -Wl,--wrap=dlclose
 OPT += -Wl,--wrap=dlsym
 OPT += -Wl,--wrap=dladdr
 OPT += -Wl,--wrap=__isoc23_strtoull
+OPT += -Wl,--wrap=__isoc23_sscanf
 # OPT += -Wl,--wrap=fstat
 
 default:

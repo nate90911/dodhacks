@@ -3,8 +3,8 @@
 #define __MODULECONFIG_H__
 
 #define MODULE_NAME "DoD Hacks"
-#define MODULE_VERSION "1.0.0.1"
-#define MODULE_VERSION_MICROSOFT 1, 0, 0, 1
+#define MODULE_VERSION "1.0.0.2"
+#define MODULE_VERSION_MICROSOFT 1,0,0,2
 #define MODULE_AUTHOR "Hattrick HKS (claudiuhks)"
 #define MODULE_URL "https://www.amxmodx.org/"
 #define MODULE_LOGTAG "DODHACKS"
@@ -19,6 +19,7 @@
 #define FN_AMXX_DETACH OnAmxxDetach
 
 #define FN_AMXX_PLUGINSLOADED OnPluginsLoaded
+#define FN_AMXX_PLUGINSUNLOADED OnPluginsUnloaded
 
 #ifdef USE_METAMOD
 

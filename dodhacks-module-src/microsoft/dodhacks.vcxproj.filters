@@ -21,42 +21,24 @@
     <Filter Include="Resource Files">
       <UniqueIdentifier>{1441a5c1-9b0c-4dc7-b898-7236588e5f98}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Signatures INI">
+      <UniqueIdentifier>{c5b75360-4408-45d3-969b-0d81a8137959}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\moduleconfig.cpp">
+    <ClCompile Include="..\dodhacks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\amxxmodule.cpp">
+    <ClCompile Include="$(AMXX)\public\sdk\amxxmodule.cpp">
       <Filter>Module SDK\SDK Base</Filter>
     </ClCompile>
     <ClCompile Include="..\Memory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(DETOURS)\src\creatwth.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="$(DETOURS)\src\detours.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="$(DETOURS)\src\disasm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(DETOURS)\src\disolarm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(DETOURS)\src\disolarm64.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(DETOURS)\src\disolia64.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(DETOURS)\src\disolx64.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(DETOURS)\src\disolx86.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="$(DETOURS)\src\image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="$(DETOURS)\src\modules.cpp">
@@ -89,6 +71,9 @@
   <ItemGroup>
     <None Include="..\dodhacks.inc">
       <Filter>Pawn Includes</Filter>
+    </None>
+    <None Include="..\dod_hacks_signatures.ini">
+      <Filter>Signatures INI</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
